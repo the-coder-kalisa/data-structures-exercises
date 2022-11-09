@@ -51,6 +51,7 @@ void calc() {
 }
 
 int main() {
+    // main function in q2
     calc();
    return 0;
 }
