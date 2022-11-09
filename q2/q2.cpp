@@ -1,13 +1,9 @@
 #include <iostream>
 #include <string.h>
-#include<stdio.h>
 
 using namespace std;
 
 int main() {
-    // main function in q2
-    char str[10];
-    gets(str);
-    puts(str);
-    return 0;
+    int num1 = 10, num2 = 20;
+    cout << num1 << " + " << num2 << " = " << num1 + num2;
 }
