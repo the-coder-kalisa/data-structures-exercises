@@ -9,7 +9,7 @@ int getArrLength(string arr[]){
 }
 
 void calc() {
-
+   // recusive function to do the calculations
    string choices[] = {"Add", "Substract", "Multiplication", "Division"};
    int choicesLenght = getArrLength(choices);
    for(int i = 0; i < choicesLenght; i++) {
