@@ -47,7 +47,6 @@ void calc() {
    }else{
     exit(-1);
    }
-   
 }
 
 int main() {
