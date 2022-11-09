@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    // main function in q3
     int num1, num2;
     cout << "Enter first number: ";
     cin >> num1;
