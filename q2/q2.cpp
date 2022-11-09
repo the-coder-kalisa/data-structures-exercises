@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+    // main function in q2
     char str[10];
     gets(str);
     puts(str);
