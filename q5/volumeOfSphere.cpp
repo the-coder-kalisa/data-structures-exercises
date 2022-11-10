@@ -10,7 +10,6 @@ float calcuateVolume(int radius) {
 }
 
 int main() {
-    // main function in q5
     int radius = 10;
     float volume = calcuateVolume(radius);
     cout << volume;
