@@ -3,7 +3,9 @@
 using namespace std;
 
 string check(int num) {
-    cout << num << " is  ";
+    // function to check if number is positive, zero or negative
+
+    cout << num << " is ";
     if (num > 0) {
         return "positive";
     }
@@ -15,6 +17,7 @@ string check(int num) {
 }
 
 int main() {
+
     int num1 = -3;
     cout << check(num1);
     return 0;

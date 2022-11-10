@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+
     int num1, num2, quotient, remainder;
     cout << "Enter first number: ";
     cin >> num1;

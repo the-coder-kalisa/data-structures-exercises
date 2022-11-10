@@ -6,6 +6,8 @@
 using namespace std;
 
 vector<string> calcHypotenuse(float a, float b, float c){
+    // function to calculate hypotenuse
+    
     vector<string> roots;
     float root1 = -b + sqrt(pow(b, 2) - (4 * a * c));
     roots.push_back("x1: " + to_string(root1 / (2 * a)));
