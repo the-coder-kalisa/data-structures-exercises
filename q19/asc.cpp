@@ -1,7 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string.h>
-#include <tuple>
 
 using namespace std;
 
