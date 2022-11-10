@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-
-    float width, length, area, perimeter;
+// main function
+    float width, length, area, perimeter; // initialization
     cout << "Enter width of rectangle: ";
     cin >> width;
     cout << "Enter length of the rectangle: ";
