@@ -8,5 +8,8 @@ int main() {
     for(int i = 0; i < length; i++) {
         
     }
+    for(auto number: numbers) {
+        cout << number << endl;
+    }
     return 0;
 }
