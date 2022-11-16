@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main() {
-   int intergers[] {1,2,3, 4, 7, 8, 9,3, 32, 10,4, 78, };
+   int intergers[] {-1,40,5,10,100, 30,9,5,8,-49, 2,7,7,60,101};
    int length = sizeof(intergers) / sizeof(intergers[0]);
    for(int i = 1; i < length; i++) {
     for(int j = i; j > 0; j--) {
