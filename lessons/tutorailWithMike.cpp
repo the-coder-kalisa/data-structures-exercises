@@ -5,13 +5,11 @@ using namespace std;
 
 
 int main() {
-    int index = 6;
-
-    do {
-        cout << index << endl;
-        index++;
-    }
-    while (index < 6);
+   /*
+            {1,2,3},
+            {4,6,7},
+        };
+     int numberGrid[][3] = {
+   */   
     return 0;
 }
-
