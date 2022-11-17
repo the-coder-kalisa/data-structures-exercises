@@ -3,13 +3,9 @@
 
 using namespace std;
 
-
 int main() {
-   /*
-            {1,2,3},
-            {4,6,7},
-        };
-     int numberGrid[][3] = {
-   */   
+    int age  = 19;
+    int *page = &age;
+    cout << *page;
     return 0;
 }
