@@ -1,16 +1,17 @@
 #include <iostream>
 #include <cmath>
+#include <array>
 
 using namespace std;
 
-double cube(double num);
-
+int *function()
+{
+    static int array[100];
+    array[0] = 10;
+    array[1] = 20;
+    return array;
+}
 int main() {
-   cout << cube(3);
-    return 0;
-}
-
-double cube(double num){
-    
-    return result;
-}
+    int *pointer = function();
+    cout << pointer[0] << endl;
+}   
