@@ -3,8 +3,9 @@
 using namespace std;
 
 int main() {
-    string name = "Kalisa fafda";
-    name[0] = 'I';
-    cout << name.substr(name.find(" ")) << endl;
+    string name;
+    cout << "Enter your name: ";
+    getline(cin, name);
+    cout << name << endl;
     return 0;
 }
