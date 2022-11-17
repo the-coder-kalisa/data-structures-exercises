@@ -4,14 +4,23 @@
 
 using namespace std;
 
-int *function()
-{
-    static int array[100];
-    array[0] = 10;
-    array[1] = 20;
-    return array;
-}
+array<int, 10> arrayReturner();
+
 int main() {
-    int *pointer = function();
-    cout << pointer[0] << endl;
-}   
+    array<int, 10> arr = arrayReturner();
+    cout << "Elements in array are: ";
+    for (int i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
+array<int,  10> arrayReturner(){
+    array<int, 10> arr;
+    int c = 0;
+    for (int i = 0;  i < 10; i++) {
+        arr[i] = c;
+        c++;
+    }
+    return arr;
+}
+
