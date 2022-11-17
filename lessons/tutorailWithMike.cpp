@@ -8,18 +8,25 @@ class Chef{
         void makeChicken() {
             cout << "This chef make chickent" << endl;
         }
+        void makeSpecialDish() {
+            cout << "This chef make wowers" << endl;
+        }
 };
 
 class ItalianChef : public Chef {
-    void makePasta() {
-        cout << "make pasta";
-    }
+    public:
+        void makePasta() {
+            cout << "make pasta";
+        }
+        void makeSpecialDish() {
+           cout << "This chef make chifa" << endl; 
+        }
 };
 
 int main() {
     Chef chef;
-    chef.makeChicken();
+    chef.makeSpecialDish();
     ItalianChef italinaChef;
-    italinaChef.makeChicken();
+    italinaChef.makeSpecialDish();
     return 0;
 }
