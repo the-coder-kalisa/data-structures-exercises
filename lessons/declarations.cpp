@@ -1,11 +1,16 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
+double cube(double num);
+
 int main() {
-    string name;
-    cout << "Enter your name: ";
-    getline(cin, name);
-    cout << name << endl;
+   cout << cube(3);
     return 0;
+}
+
+double cube(double num){
+    
+    return result;
 }
