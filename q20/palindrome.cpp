@@ -26,6 +26,6 @@ bool palindrome(string palind) {
     return palind == reversedString;
 }
 int main() {
-    cout << palindrome("nun") << endl;
+    cout << palindrome("ka") << endl;
     return 0;
 }
