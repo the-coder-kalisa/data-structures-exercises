@@ -4,11 +4,14 @@ using namespace std;
 
 int main() {
     
-
-    // b 
-    int k = 60;
-    int *ptr = &k;
-    cout << (*ptr)++ << " ";
-    cout << k << endl;
+   int a = 50;
+   int *ptr = &a;
+   cout << (*ptr)++ << endl;
+   cout << a << endl;
+   int *q = ptr;
+   (*q)++;
+   cout << (*ptr)++ << endl;
+   cout << *q << endl;
+   cout << a << endl;
     return 0;
 }
