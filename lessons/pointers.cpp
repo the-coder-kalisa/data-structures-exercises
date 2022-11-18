@@ -4,9 +4,11 @@ using namespace std;
 
 int main() {
     
-    int *ptr = 0; // direct assignment to a pointer it is error (segmentation fault)
-    int r = 30;
-    *ptr = r;
-    cout << *ptr;
+
+    // b 
+    int k = 60;
+    int *ptr = &k;
+    cout << (*ptr)++ << " ";
+    cout << k << endl;
     return 0;
 }
