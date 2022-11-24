@@ -31,6 +31,6 @@ public:
 int main()
 {
     Root root1 = Root(5, 10, 3);
-    cout << root1.getRoots();
+    cout << root1.getRoots() << endl;
     return 0;
 }
