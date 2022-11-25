@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int main()
+string checkNthPrime(int check)
 {
     vector<int> primeNumbers = {};
     int i = 2;
@@ -27,9 +27,20 @@ int main()
         }
         i++;
     }
-    for (int i : primeNumbers)
+    int index;
+    for (int i = 0; i < sizeof(primeNumbers) / sizeof(primeNumbers[0]); i++)
     {
-        // cout << i << endl;
+        if (check == primeNumbers[i])
+        {
+            index = i + 1;
+        }
     }
+    return to_string(index) + "nth";
+}
+
+int main()
+
+{
+    cout << checkNthPrime(2);
     return 0;
 }

@@ -1,24 +1,19 @@
+#include <array>
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
-int factorial(int n)
+int *reverseArra(int arr[], int size)
 {
-    cout << "f";
-    if (n < 0)
-        return -1;
-    if (n == 0)
-        return 1;
-    int smallAnswer = factorial(n - 1);
-    cout << n << endl;
-    return n * smallAnswer;
+    static int array[3];
+    for (int i = size; i > -1; i--) {
+        array[i] = arr[size - 1 - i];
+    }
+    return array;
 }
 
 int main()
 {
-    int n = 5;
-    int answer = factorial(n);
-    // cout << answer;
-    return 0;
+   int b = 275;
+   cout << (b >> 3);
 }
