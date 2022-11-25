@@ -3,27 +3,34 @@
 
 using namespace std;
 
-class Chef{
-    public:
-        void makeChicken() {
-            cout << "This chef make chickent" << endl;
-        }
-        void makeSpecialDish() {
-            cout << "This chef make wowers" << endl;
-        }
+class Chef
+{
+public:
+    void makeChicken()
+    {
+        cout << "This chef make chickent" << endl;
+    }
+    void makeSpecialDish()
+    {
+        cout << "This chef make wowers" << endl;
+    }
 };
 
-class ItalianChef : public Chef {
-    public:
-        void makePasta() {
-            cout << "make pasta";
-        }
-        void makeSpecialDish() {
-           cout << "This chef make chifa" << endl; 
-        }
+class ItalianChef : public Chef
+{
+public:
+    void makePasta()
+    {
+        cout << "make pasta";
+    }
+    void makeSpecialDish()
+    {
+        cout << "This chef make chifa" << endl;
+    }
 };
 
-int main() {
+int main()
+{
     Chef chef;
     chef.makeSpecialDish();
     ItalianChef italinaChef;
