@@ -1,40 +1,50 @@
 #include <iostream>
 
-class Node {
- public:
+class Node
+{
+public:
   int data;
-  Node* next;
+  Node *next;
 
-  Node(int data) {
+  Node(int data)
+  {
     this->data = data;
     this->next = NULL;
   }
 };
 
-class LinkedList {
- public:
-  Node* head;
 
-  LinkedList() {
+
+class LinkedList
+{
+public:
+  Node *head;
+
+  LinkedList()
+  {
     head = NULL;
   }
 
-  void insert(int data, int index) {
-    Node* newNode = new Node(data);
+  void insert(int data, int index)
+  {
+    Node *newNode = new Node(data);
 
-    if (head == NULL) {
+    if (head == NULL)
+    {
       head = newNode;
       return;
     }
 
-    if (index == 0) {
+    if (index == 0)
+    {
       newNode->next = head;
       head = newNode;
       return;
     }
 
-    Node* current = head;
-    for (int i = 0; i < index - 1; i++) {
+    Node *current = head;
+    for (int i = 0; i < index - 1; i++)
+    {
       current = current->next;
     }
 
@@ -43,14 +53,16 @@ class LinkedList {
   }
 };
 
-int main() {
+int main()
+{
   LinkedList list;
   list.insert(1, 0);
   list.insert(2, 1);
   list.insert(3, 2);
 
-  Node* current = list.head;
-  while (current != NULL) {
+  Node *current = list.head;
+  while (current != NULL)
+  {
     std::cout << current->data << " ";
     current = current->next;
   }
